@@ -1,13 +1,11 @@
 package fr.iambluedev.cfscrape.core.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class ApiResponse extends ApiDirectResponse {
-
-	private String token;
-	private boolean finished;
-	
+  
+  private String token;
+  private boolean finished;
+  
 }
