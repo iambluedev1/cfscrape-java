@@ -52,13 +52,13 @@ public class CfScrape implements IScrape {
 	@Override
 	public String getSyncHtml() {
 		logger.info("Start synchrone task");
-		return new DirectRequest("https://kfaction.net/banlist").getResponse().getHtml();
+		return new DirectRequest(getUrl()).getResponse().getHtml();
 	}
 
 	@Override
 	public ApiDirectResponse getSyncResponse() {
 		logger.info("Start synchrone task");
-		return new DirectRequest("https://kfaction.net/banlist").getResponse();
+		return new DirectRequest(getUrl()).getResponse();
 	}
 	
 	
