@@ -1,13 +1,11 @@
 package fr.iambluedev.cfscrape.core.model;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class ApiErrorResponse {
-
-	private Integer error;
-	private String message;
-	
+  
+  private Integer error;
+  private String message;
+  
 }
