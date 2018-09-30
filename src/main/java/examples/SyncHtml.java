@@ -6,7 +6,7 @@ public class SyncHtml {
 
 	public static void main(String[] args) {
 		CfScrape cfScrape = CfScrape.get();
-		cfScrape.setUrl("https://kfaction.net/banlist");
+		cfScrape.setUrl("https://www.mc-market.org");
 		String html = cfScrape.getSyncHtml();
 		
 		System.out.println(html);
